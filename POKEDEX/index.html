@@ -28,49 +28,18 @@
   </head>
   <body>
     <section class="content">
-        <h1>Pokedex</h1>
-
-        <ol class="pokemons">
-            <li class="pokemon">
-                <span class="number">#001</span>
-                <span class="name">Bulbasaur</span>
-                <div class="detail">
-                    <ol class="types">
-                        <li class="type">grass</li>
-                        <li class="type">poison</li>
-                    </ol>
-                    <img src="https://archives.bulbagarden.net/media/upload/f/fb/0001Bulbasaur.png" alt="Bulbasaur">
-                </div>
-               <!--
-            </li>
-            <li>
-                Ivysaur
-
-                <img src="https://archives.bulbagarden.net/media/upload/8/81/0002Ivysaur.png" alt="Ivysaur">
-            </li>
-            <li>
-                Venusaur
-
-                <img src="https://archives.bulbagarden.net/media/upload/6/6b/0003Venusaur.png" alt="Venusaur">
-            </li>
-            <li>
-                Charmander
-                <img src="https://archives.bulbagarden.net/media/upload/2/27/0004Charmander.png" alt="Charmander">
-            </li>
-            <li>
-                Charmeleon
-
-                <img src="https://archives.bulbagarden.net/media/upload/0/05/0005Charmeleon.png" alt="Charmeleon">
-            </li>
-            <li>
-                Charizard
-
-                <img src="https://archives.bulbagarden.net/media/upload/3/38/0006Charizard.png" alt="Charizard">
-            </li>
-            --> 
+      <h1>Pokedex</h1>
+      <ol id="pokemonList" class="pokemons">
+      </ol>
+      <div class="pagination">
+        <button id="loadMoreButton" type="button">Load More</button>
+      </div>
+      
     </section>
 
     <!-- Nosso JS -->
+    <script src="./assets/js/pokemon-model.js"></script>
+    <script src="./assets/js/poke-api.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
